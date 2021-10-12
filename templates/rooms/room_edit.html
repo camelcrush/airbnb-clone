@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block page_title %}
+Update Profile
+{% endblock page_title%}
+
+{% block content %}
+
+<div class="container flex flex-col items-center mx-auto my-10 border border-gray-400 p-6 xl:w-1/4 md:w-1/2 lg:w-5/12">
+
+    {% include "mixins/room/room_form.html" with form=form cta="Update Room" %}
+
+    <div class="mt-5">
+        <a href="{% url 'rooms:photos' room.pk %}" class="text-green-500 font-medium">Edit Photo</a>
+    </div>
+
+</div>
+
+{% endblock content %}

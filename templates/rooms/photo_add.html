@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block page_title %}
+Upload Photo
+{% endblock page_title%}
+
+{% block content %}
+
+<div class="container flex flex-col items-center mx-auto my-10 border border-gray-400 p-6 xl:w-1/4 md:w-1/2 lg:w-5/12">
+
+    {% include "mixins/room/room_form.html" with form=form cta="Upload Photo" %}
+
+</div>
+
+{% endblock content %}
